@@ -51,4 +51,4 @@ add_custom_target(
     WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}
 )
 
-add_executable(${PROJECT_NAME} ${SRC_LIST} src/lib/io/jorix_atmega32.h src/lib/io/analog.c)
+add_executable(${PROJECT_NAME} ${SRC_LIST} src/lib/io/jorix_atmega32.h src/lib/io/jorix_analog.c src/lib/communication/jorix_usart.c src/lib/communication/jorix_usart.h)

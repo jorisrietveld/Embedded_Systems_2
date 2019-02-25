@@ -8,5 +8,17 @@
 
 #ifndef EMBEDDED2_ASSIGNMENT_3_H
 #define EMBEDDED2_ASSIGNMENT_3_H
+
+#include <avr/io.h>
+#include <util/delay.h>
+#include <avr/interrupt.h>
+
+#include <stdio.h>
+
+//#include "lib/io/analog512.h"
+#include "lib/io/jorix_analog.h"
+#include "lib/lcd/jorix_lcd.h"
+#include "lib/communication/jorix_uart_single.h"
+
 void assignment3();
 #endif //EMBEDDED2_ASSIGNMENT_3_H

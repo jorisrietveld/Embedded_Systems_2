@@ -11,8 +11,16 @@
 #include "lib/io/jorix_atmega32.h"
 #include <avr/io.h>
 #include <avr/interrupt.h>  // Used for enabling interrupts on receive.
+//#define F_CPU 11059200
+#define BAUD 9600
+#include <util/setbaud.h>
+
 #include <math.h>           // Used to calculate the baud rate.
 
 #define UBBR_VALUE 25
+
+void initUARD0(int baud, char asyncDoubleSpeed, char dataSize, char parity, char stopBits, char interruptEnable);
+unsigned char receiveUART0();
+void transmitUART0(unsigned char data);
 
 #endif //EMBEDDED2_JORIX_UART_H

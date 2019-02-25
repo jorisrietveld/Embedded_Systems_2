@@ -12,43 +12,7 @@ void lcdWrite(unsigned char);
 /**
  * This function will setup the LCD and initiate the startup sequence.
  */
-/*void initLCD (  )
-{
-  // Setup I/0)
-  LCD_DDR_CRTL |= 1 << LCD_ENABLE_SIGNAL_PIN |  // Setup as output, for starting a read or write operation.
-                  1 << LCD_READ_WRITE_PIN |     // Setup as output, to switch between read or write mode.
-                  1 << LCD_FUNCTION_SELECT_PIN; // Setup as output, for selecting the data or instruction register.
 
-  _delay_ms (15); // Wait for vcc to rise before sending commands to the LCD.
-
-  lcdWriteCommand (LCDI_CLEAR_DISPLAY );
-  _delay_ms(2);
-  lcdWriteCommand(LCDI_FUNCTION_SET | LCDF_FUNC_SET_5x10DOTS);
-  _delay_us(50);
-
-  lcdWriteCommand(LCDF_CRTL_CURSOR_ON|LCDF_CRTL_DISPLAY_ON|LCDF_CRTL_CURSOR_ON|LCDI_DISPLAY_CRTL);
-    _delay_us(50);
-  //LCD_CRTL_PORT &= ~(1<<LCD_FUNCTION_SELECT_PIN); // Write a 0 to RS to select command mode.
-  //lcdWrite(LCDI_FUNCTION_SET | LCDF_FUNC_SET_8BITMODE);
-
-  //_delay_ms(5);
-
-  //LCD_CRTL_PORT &= ~(1<<LCD_FUNCTION_SELECT_PIN); // Write a 0 to RS to select command mode.
-  //lcdWrite(LCDI_FUNCTION_SET | LCDF_FUNC_SET_8BITMODE);
-
-  //_delay_us(150);
-
-  //LCD_CRTL_PORT &= ~(1<<LCD_FUNCTION_SELECT_PIN); // Write a 0 to RS to select command mode.
-  //lcdWrite(LCDI_FUNCTION_SET );
-
-  //lcdWriteCommand (LCDI_CLEAR_DISPLAY );
-  //lcdWriteCommand (LCDI_ENTRY_MODE_SET | LCDF_ENTRY_SHIFT_DECREMENT | LCDF_ENTRY_LEFT);
-  //lcdWriteCommand(LCDI_DISPLAY_CRTL | LCDF_CRTL_DISPLAY_ON);
-  *//*
-  lcdWriteCommand (LCDI_DISPLAY_CRTL | LCDF_CRTL_DISPLAY_OFF);
-  lcdWriteCommand (LCDI_CLEAR_DISPLAY);
-  lcdWriteCommand (LCDI_ENTRY_MODE_SET | LCDF_ENTRY_SHIFT_DECREMENT | LCDF_ENTRY_LEFT);*//*
-}*/
 void initLCD ()
 {
   // Setup I/0)

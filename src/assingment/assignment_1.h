@@ -16,7 +16,7 @@
 #include <avr/interrupt.h>
 
 //#include "lib/io/analog512.h"
-#include "lib/io/analog.h"
+#include "lib/io/jorix_analog.h"
 #include "lib/lcd/jorix_lcd.h"
 
 void assignment1(void);

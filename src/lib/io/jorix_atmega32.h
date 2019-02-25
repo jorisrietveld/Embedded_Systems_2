@@ -27,7 +27,7 @@
 #define SPMCSR  SPMCR
 #define SMCR    MCUCR
 #define EICRA   MCUCR
-#define MCUSR   MCUCSR
+//#define MCUSR   MCUCSR
 #define TCCR0A  TCCR0
 #define ADCSRB  SFIOR
 #define TCCR2A  TCCR2

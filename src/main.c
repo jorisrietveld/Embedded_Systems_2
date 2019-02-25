@@ -9,7 +9,7 @@
 #include "assingment/assignment_2.h"
 #include "assingment/assignment_3.h"
 
-#define ASSIGNMENT 1
+#define ASSIGNMENT 3
 
 int
 main()
